@@ -1,0 +1,64 @@
+﻿@model IEnumerable<equipas_mvc.Models.Liga>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<style>
+    body {
+        background: rgb(214,249,202);
+        background: linear-gradient(90deg, rgba(214,249,202,1) 0%, rgba(255,234,35,0.2945553221288515) 50%, rgba(213,6,6,0.2049194677871149) 100%);
+    }
+</style>
+<h1>Index</h1>
+<p><img src="https://i.imgur.com/tKIGnWU.png"></p>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Equipa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pontos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Jogos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cidade)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Equipa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pontos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Jogos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cidade)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

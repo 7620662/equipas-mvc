@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "equipas-mvc", "equipas-mvc.csproj", "{C34C6CE1-C02E-489C-A2CD-190BE5CD3364}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C34C6CE1-C02E-489C-A2CD-190BE5CD3364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C34C6CE1-C02E-489C-A2CD-190BE5CD3364}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C34C6CE1-C02E-489C-A2CD-190BE5CD3364}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C34C6CE1-C02E-489C-A2CD-190BE5CD3364}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3450B52-24C3-4347-A226-F8BD4ED905BA}
+	EndGlobalSection
+EndGlobal
